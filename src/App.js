@@ -1,12 +1,14 @@
 import './App.css';
 import Counter from './containers/Counter'
-
+import ToDoList from './containers/ToDoList'
 
 function App() {
-  const name = "Victoria"
   return (
     <div className="App">
-      <Counter/>
+      <h2> Counter </h2>
+      <Counter/> 
+      <h2> To Do List </h2>
+      <ToDoList/>
     </div>
   );
 }

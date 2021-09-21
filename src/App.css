@@ -10,12 +10,6 @@
   color: white;
 }
 
-button{
-  height: 60px;
-  width: 60px;
-  font-size: 40px
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;

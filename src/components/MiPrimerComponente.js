@@ -1,5 +1,7 @@
 import React from "react"
 
+//Ejemplo de Componente de Clase
+
 class MiPrimerComponente extends React.Component {
     constructor(props){
         this.state = {
