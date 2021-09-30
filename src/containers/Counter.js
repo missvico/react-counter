@@ -1,4 +1,4 @@
-import {useState} from "react"
+import {useState, useEffect} from "react"
 import Button from '../components/Button'
 import CounterNumber from '../components/CounterNumber'
 import Message from '../components/Message'
@@ -6,7 +6,15 @@ import './styles/Counter.css';
 
 export default function Counter(){
     let [number, setNumber] = useState(0)
-    console.log(number <= 0)
+
+
+    useEffect(()=>{
+        console.log(`Me renderice y el numero vale ${number}`)
+        return () => {
+            console.log(`Me fui y numero vale ${number}`)
+        }
+    },[number])
+
     const handleAdd = ()=>{
         setNumber(number+1)
     }
